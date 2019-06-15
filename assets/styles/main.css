@@ -87,9 +87,39 @@ ul.navbar li.nav-item {
 .mobile-navbar {
 	display: none;
 }
-@media only screen and (max-width: 780px) {
+/* Location */
+#address {
+	margin-top: 11rem;
+}
+
+#location p {
+	margin-bottom: 0;
+}
+
+#location h4 {
+	font-size: 2.8rem;
+}
+
+iframe {
+	margin-top: 2rem;
+	width: 100%;
+	height: 400px;
+}
+
+/* End of Location */
+@media only screen and (max-width: 801px) {
 	ul.navbar li.nav-item {
 		font-size: 0.7rem;
+	}
+	#address {
+		margin-top: 2rem;
+	}
+	#address h4, #address p {
+		text-align: center;
+	}
+	iframe {
+		width: 700px;
+		margin-top: 1rem;
 	}
 }
 @media only screen and (max-width: 570px) {
@@ -111,5 +141,11 @@ ul.navbar li.nav-item {
 	}
 	.desktop-navbar li.nav-item {
 		display: none;
+	}
+	#address {
+		margin-top: 1rem;
+	}
+	iframe {
+		width: 500px;
 	}
 }
