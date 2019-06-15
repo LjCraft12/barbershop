@@ -33,7 +33,7 @@ ul.desktop-navbar {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: 85vh;
 }
 /* ul li {
 	display: block;
@@ -47,7 +47,7 @@ ul.desktop-navbar {
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: block;
-	height: 100%;
+	height: 85vh;
 	width: 100% !important;
 	overflow: hidden;
 	position: absolute;
@@ -55,7 +55,7 @@ ul.desktop-navbar {
 }
 #jumbotron-overlay {
 	background-color: rgba(0, 0, 0, 0.8);
-	height: 100%;
+	height: 85vh;
 	width: 100% !important;
 	position: absolute;
 	z-index: 1;
@@ -116,8 +116,14 @@ iframe {
 	ul.navbar li.nav-item {
 		font-size: 0.7rem;
 	}
+	#hero-image, #jumbotron-overlay {
+		height: 45vh;
+	}
+	ul.desktop-navbar {
+		height: 45vh;
+	}
 	#address {
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 	#address h4, #address p {
 		text-align: center;
