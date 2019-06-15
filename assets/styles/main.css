@@ -28,7 +28,7 @@ html {
 #showcase {
 	padding: 0;
 }
-ul {
+ul.desktop-navbar {
 	position: relative;
 	list-style: none;
 	margin: 0;
@@ -64,25 +64,28 @@ ul {
 	position: relative;
 	display: flex;
 	justify-content: space-evenly;
-	z-index: 10;
 	color: #fff;
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
+	z-index: 10;
 }
 ul.navbar li.nav-item {
 	font-family: "Rye", cursive;
 	color: var(--main-white);
 	text-transform: uppercase;
 }
-.container-fluid {
+#navbar-logo {
 	margin: 0;
 	padding: 0;
-	width: 25vw;
+	width: 30vw;
 }
-.img-fluid {
+#hairport-logo {
 	display: block;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+}
+.mobile-navbar {
+	display: none;
 }
 @media only screen and (max-width: 780px) {
 	ul.navbar li.nav-item {
@@ -90,10 +93,23 @@ ul.navbar li.nav-item {
 	}
 }
 @media only screen and (max-width: 570px) {
-	.img-fluid {
-		width: 100%;
+	#navbar-logo {
+		width: 45vw;
 	}
-	ul.navbar li.nav-item {
-		visibility: hidden;
+	.mobile-navbar {
+		display: flex;
+		padding: 0;
+		background-color: var(--main-black);
+		height: 40px;
+		width: 100%;
+		justify-items: center;
+		align-items: center;
+	}
+	nav.mobile-navbar li.nav-item {
+		display: flex;
+		font-size: 0.6rem;
+	}
+	.desktop-navbar li.nav-item {
+		display: none;
 	}
 }
