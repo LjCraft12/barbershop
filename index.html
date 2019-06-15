@@ -49,7 +49,7 @@
 								/>
 							</div>
 							<li class="nav-item">Gallery</li>
-							<li class="nav-item">Location</li>
+							<li class="nav-item"><a href="#location">Location</a></li>
 							<li class="nav-item">Contact</li>
 						</ul>
 					</nav>
@@ -72,8 +72,10 @@
 		</nav>
 		<!-- Mobile Navbar Ends -->
 		<!-- Main Content Starts -->
+
+		<!-- About -->
 		<section id="about-section">
-			<h3 id="about-header">ABOUT</h3>
+			<h4 id="about-header" class="text-center display-4">ABOUT</h4>
 			<div class="container" id="about-text">
 				<p class="about-para">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste
@@ -101,22 +103,53 @@
 				</p>
 			</div>
 		</section>
+		<!-- End of about -->
+
+		<!-- Location -->
 		<section>
 			<div id="location" class="row">
-				<div id="address" class="col-lg-4 col-md-12 col-sm-12 text-lg-center text-md-center">
-					<h4>Location</h4>
-					<p>2523 Lawrencevillew Hwy Suite A,</p>
-					<p>Decatur GA, 30033</p>
+				<div
+					id="address"
+					class="col-lg-4 col-md-12 col-sm-12 text-lg-center text-md-center"
+				>
+					<h4 class="display-4">Location</h4>
+					<p class="lead">2523 Lawrencevillew Hwy Suite A,</p>
+					<p class="lead">Decatur GA, 30033</p>
 				</div>
 				<div id="map" class="col-lg-7 col-md-12 col-sm-12 text-center mr-2">
 					<iframe
-							src="https://maps.google.com/maps?q=hair%20port%20barbershop&t=&z=17&ie=UTF8&iwloc=&output=embed"
-							frameborder="0" scrolling="no"
-							marginheight="0" marginwidth="0">
+						src="https://maps.google.com/maps?q=hair%20port%20barbershop&t=&z=17&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0">
 					</iframe>
 				</div>
 			</div>
 		</section>
+		<!-- End of location -->
+
+		<!-- Contact -->
+		<section class="contact-section">
+			<h4 class="display-4 text-center mt-4">Contact Us</h4>
+			<form id="contact" class="container mb-4">
+				<div class="form-group">
+					<label for="client-email">Email address</label>
+					<input type="email" class="form-control" id="client-email" aria-describedby="emailHelp" placeholder="Enter email">
+					<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="client-subject">Subject</label>
+					<input type="text" class="form-control" id="client-subject" placeholder="Subject">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">How can we help?</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
+			</form>
+		</section>
+		<!-- End of contact -->
 		<!-- Main Content Ends -->
 		<!-- Bootstrap Scripts -->
 		<script
