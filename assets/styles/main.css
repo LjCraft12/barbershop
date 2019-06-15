@@ -84,6 +84,11 @@ ul.navbar li.nav-item {
 	width: 80%;
 	margin: 0 auto;
 }
+
+/* Location */
+#
+/* End of Location */
+
 @media only screen and (max-width: 780px) {
 	ul.navbar li.nav-item {
 		font-size: 0.7rem;
