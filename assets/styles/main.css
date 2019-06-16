@@ -97,8 +97,19 @@ ul.navbar li.nav-item {
 	margin-bottom: 0;
 }
 
-#location h4 {
+.section-header {
+	text-align: center;
+	font-family: "Rye", cursive;
 	font-size: 2.8rem;
+	text-transform: uppercase;
+	color: var(--main-black);
+}
+.sub-header {
+	text-align: center;
+	font-family: "Satisfy", cursive;
+	font-size: 1.5rem;
+	text-transform: lowercase;
+	color: var(--main-red);
 }
 
 iframe {
