@@ -103,7 +103,12 @@ ul.navbar li.nav-item {
 /* Location */
 
 #address {
-    margin-top: 11rem;
+    margin-top: 6rem;
+}
+
+.hours {
+    margin-bottom: -.2rem;
+    margin-top: 1rem;
 }
 
 #location p {
@@ -132,6 +137,9 @@ iframe {
     width: 100%;
     height: 400px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+}
+.contact-section {
+    margin-top: -9rem;
 }
 
 /* End of Location */
