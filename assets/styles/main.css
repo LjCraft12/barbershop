@@ -101,6 +101,18 @@ ul.navbar li.nav-item {
     display: none;
 }
 
+/* Services */
+.service-item {
+    margin: .9rem 0;
+    border: 8px solid saddlebrown;
+    padding: 1rem 0 ;
+}
+.service-item i {
+    font-size: 3rem;
+}
+
+/* End of ervices */
+
 /* Location */
 #location {
 
@@ -135,7 +147,7 @@ ul.navbar li.nav-item {
     color: var(--main-red);
 }
 
-#location-section {
+#location-section, #services-section {
     margin-top: 4rem;
 }
 
