@@ -114,9 +114,6 @@ ul.navbar li.nav-item {
 /* End of ervices */
 
 /* Location */
-#location {
-}
-
 #address {
 	margin-top: 9rem;
 }
@@ -177,7 +174,23 @@ iframe {
 .contact-section {
 	margin-bottom: 4rem;
 }
+.contact-section h4 {
+    color: #fff;
+}
 
+.contact-background {
+    background: saddlebrown;
+    color: var(--bright-white);
+    padding: 1rem 0 .5rem 0;
+}
+.btn-outline-secondary {
+    border-color: var(--bright-white);
+    color: var(--bright-white);
+}
+.btn-outline-secondary:hover {
+    background: var(--bright-white);
+    color: #000;
+}
 /* End of Location */
 @media only screen and (max-width: 801px) {
 	.mobile-navbar {
