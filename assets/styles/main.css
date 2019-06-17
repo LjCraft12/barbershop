@@ -184,7 +184,7 @@ iframe {
 		display: flex;
 		padding: 0;
 		background-color: var(--main-black);
-		height: 40px;
+		height: 60px;
 		width: 100%;
 		justify-items: center;
 		align-items: center;
@@ -199,8 +199,8 @@ iframe {
 		display: none;
 	}
 
-	ul.navbar li.nav-item {
-		font-size: 0.7rem;
+	ul.navbar li.nav-item a {
+		font-size: 1rem;
 	}
 
 	#hero-image,
@@ -307,19 +307,24 @@ iframe {
 
 	.mobile-navbar {
 		display: flex;
+		margin: 0;
 		padding: 0;
 		background-color: var(--main-black);
-		height: 40px;
+		height: 60px;
 		width: 100%;
 		justify-items: center;
 		align-items: center;
 	}
 
-	nav.mobile-navbar li.nav-item {
+	nav.mobile-navbar li.nav-item a {
 		display: flex;
-		font-size: 0.6rem;
+		font-size: 0.68rem;
+		margin: 0;
+		padding: 0;
 	}
-
+	nav.mobile-navbar ul.navbar {
+		padding: 0;
+	}
 	.desktop-navbar li.nav-item {
 		display: none;
 	}
