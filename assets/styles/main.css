@@ -6,6 +6,7 @@
 	--main-white: #fafafa;
 	--bright-white: #fff;
 	--main-brown: #6d4c41;
+	--leather-brown: #512f26;
 }
 
 * {
@@ -112,7 +113,40 @@ ul.navbar li.nav-item {
 }
 
 /* End of ervices */
-
+/* Prices sections */
+#prices-section {
+	background-color: rgba(81, 47, 38, 0.1);
+	height: 500px;
+	padding: 2rem 1rem;
+}
+#prices {
+	width: 98%;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+.price-flex {
+	width: 30%;
+	text-align: center;
+	border: 0.5rem solid var(--leather-brown);
+	padding: 20px 5px;
+}
+.price-flex-header {
+	font-size: 2rem;
+	margin-bottom: 0.1rem;
+}
+.dollar-sign {
+	font-size: 4rem;
+}
+.price-number {
+	font-size: 8rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+.price-description {
+	font-size: 1.3rem;
+}
+/* Prices section ends */
 /* Location */
 #address {
 	margin-top: 9rem;
@@ -171,25 +205,25 @@ iframe {
 	/*height: 60vh;*/
 }
 
-.contact-section {
+#contact-section {
 	margin-bottom: 4rem;
 }
-.contact-section h4 {
-    color: #fff;
+#contact-section h4 {
+	color: #fff;
 }
 
 .contact-background {
-    background: saddlebrown;
-    color: var(--bright-white);
-    padding: 1rem 0 .5rem 0;
+	background-color: #512f26;
+	color: var(--bright-white);
+	padding: 1rem 0 0.5rem 0;
 }
 .btn-outline-secondary {
-    border-color: var(--bright-white);
-    color: var(--bright-white);
+	border-color: var(--bright-white);
+	color: var(--bright-white);
 }
 .btn-outline-secondary:hover {
-    background: var(--bright-white);
-    color: #000;
+	background: var(--bright-white);
+	color: #000;
 }
 /* End of Location */
 @media only screen and (max-width: 801px) {
@@ -202,12 +236,16 @@ iframe {
 		justify-items: center;
 		align-items: center;
 	}
-
+	#prices-section {
+		height: 550px;
+	}
 	nav.mobile-navbar li.nav-item {
 		display: flex;
 		font-size: 0.6rem;
 	}
-
+	#location-section {
+		margin-top: 1rem;
+	}
 	.desktop-navbar li.nav-item {
 		display: none;
 	}
@@ -225,8 +263,8 @@ iframe {
 		height: 45vh;
 	}
 
-	#map {
-		height: 36vh;
+	#location {
+		height: 650px;
 	}
 
 	#address {
@@ -238,17 +276,18 @@ iframe {
 	#address p {
 		text-align: center;
 	}
-
+	#map {
+		margin-top: -1rem;
+	}
 	iframe {
 		width: 700px;
 		margin-top: 1rem;
 	}
-
 	.gallery img {
 		height: 45vh;
 	}
 
-	.contact-section {
+	#contact-section {
 		margin-top: 2vh;
 	}
 
@@ -265,7 +304,7 @@ iframe {
 	}
 	/* End of hours */
 	/* Contact*/
-	.contact-section {
+	#contact-section {
 		margin-top: -2rem;
 	}
 
@@ -275,6 +314,19 @@ iframe {
 	@media only screen and (max-width: 768px) {
 		ul.navbar li.nav-item {
 			font-size: 0.7rem;
+		}
+		#prices-section {
+			height: 1100px;
+		}
+		#prices {
+			display: block;
+		}
+		.price-flex {
+			width: 90%;
+			margin: 1rem auto;
+		}
+		#location {
+			height: 750px;
 		}
 	}
 	#hero-image,
@@ -304,7 +356,7 @@ iframe {
 		margin-top: 1rem;
 	}
 
-	.contact-section {
+	#contact-section {
 		margin-top: 4rem;
 	}
 
@@ -345,7 +397,7 @@ iframe {
 		background-color: var(--main-white);
 	}
 	#map {
-		height: 56vh;
+		height: 405px;
 	}
 
 	#address {
@@ -358,13 +410,32 @@ iframe {
 	.gallery {
 		margin-top: 0;
 	}
-	.contact-section {
+	#contact-section {
 		margin-top: -3rem;
 	}
 }
 
 @media only screen and (max-width: 420px) {
-	nav.mobile-navbar li.nav-item {
+	nav.mobile-navbar li.nav-item a {
+		font-size: 0.7rem;
+	}
+	#prices-section {
+		height: 1200px;
+	}
+	#contact-section {
+		margin-bottom: 50px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	nav.mobile-navbar li.nav-item a {
 		font-size: 0.5rem;
+	}
+	#about-section {
+		height: 910px;
+		margin-top: -17px;
+		padding-top: 20px;
+	}
+	#prices-section {
+		height: 1300px;
 	}
 }
